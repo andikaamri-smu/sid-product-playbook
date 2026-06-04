@@ -1,0 +1,79 @@
+site_name: SID Product Playbook
+site_description: Panduan internal tim produk PT Semesta Integrasi Digital
+site_author: SID Product Team
+site_url: https://andikaamri-smu.github.io/sid-product-playbook
+
+repo_name: sid-product-playbook
+repo_url: https://github.com/andikaamri-smu/sid-product-playbook
+
+theme:
+  name: material
+  language: id
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Inter
+    code: JetBrains Mono
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.tooltips
+    - toc.follow
+
+plugins:
+  - search:
+      lang: id
+  - tags
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Kolaborasi Tim:
+    - Cara Kolaborasi Antar Tim Produk: kolaborasi/cara-kolaborasi.md
+  - Tips AI untuk PM:
+    - Menggunakan AI dalam Pekerjaan Sehari-hari: ai-tips/ai-untuk-pm.md
+  - Panduan Tools:
+    - ClickUp, Notion & Cowork: tools/cara-penggunaan-tools.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/YOUR_GITHUB_USERNAME/sid-product-playbook
+  generator: false
+
+copyright: Copyright &copy; 2026 SID Product Team
